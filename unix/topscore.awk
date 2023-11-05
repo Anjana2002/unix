@@ -1,0 +1,18 @@
+BEGIN{
+  FS=","
+  top_scorer=""
+  max_mark=0
+}
+{
+  total_marks=$2+$3+$4
+  stud=$1
+  if(total_marks>max_mark)
+  {
+    max_mark=total_marks
+    top_scorer=stud
+  }
+}
+END{
+  print(top_scorer)
+  print(max_mark)
+}

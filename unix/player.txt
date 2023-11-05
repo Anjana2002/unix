@@ -1,0 +1,4 @@
+ab,India,80
+cd,India,60
+df,USA,70
+gh,Australia,80
